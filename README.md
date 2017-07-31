@@ -42,3 +42,4 @@ Best practices like dropout, batch normalization, suitable optimizers are used.
 ### 5. Others
 * Image Captioning with attention [Bengio 2016](https://arxiv.org/pdf/1502.03044.pdf)
 * Hybrid Computing with a NN and external memory [Nature 2016](https://www.dropbox.com/s/0a40xi702grx3dq/2016-graves.pdf)
+* Network in Network [2014](https://arxiv.org/pdf/1312.4400.pdf)
