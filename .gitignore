@@ -102,5 +102,7 @@ ENV/
 
 datasets/*
 !datasets/.gitkeep 
+trained/*
+!trained/.gitkeep 
 .DS_Store
 *.pkl

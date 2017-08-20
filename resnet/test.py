@@ -15,7 +15,7 @@ test_loader = torch.utils.data.DataLoader(dataset=test_dataset,
                                           shuffle=False)
 
 # Model
-resnet = torch.load('resnet.pkl')
+resnet = torch.load('../trained/resnet.pkl')
 
 # Test
 correct = 0

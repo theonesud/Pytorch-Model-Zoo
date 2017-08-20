@@ -56,4 +56,4 @@ for epoch in range(epochs):
 
 
 # Save the Model
-torch.save(resnet, 'resnet.pkl')
+torch.save(resnet, '../trained/resnet.pkl')
