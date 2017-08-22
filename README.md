@@ -11,6 +11,8 @@ The structure for each project is consistent:
 
 Best practices like dropout, batch normalization, suitable optimizers are used.
 
+Trained models can be found [here](https://drive.google.com/open?id=0B24n6xHwJ0h0TW5mdWk2QTZIN0k).
+
 ## Models
 
 ### 1. CNNs

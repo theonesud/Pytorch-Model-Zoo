@@ -25,6 +25,7 @@ train_loader = torch.utils.data.DataLoader(dataset=train_dataset,
 
 # Model
 resnet = ResNet(block=ResidualBlock, layers=[2, 2, 2])
+resnet = resnet.cuda()
 
 # Loss and Optimizer
 criterion = nn.CrossEntropyLoss()
@@ -32,9 +33,11 @@ lr = 0.001
 optimizer = torch.optim.Adam(resnet.parameters(), lr=lr)
 
 # Training
-epochs = 1
+epochs = 80
 for epoch in range(epochs):
     for i, (images, labels) in enumerate(train_loader):
+        images = images.cuda()
+        labels = labels.cuda()
         images = Variable(images)
         labels = Variable(labels)
 

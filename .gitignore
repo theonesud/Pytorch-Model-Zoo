@@ -106,3 +106,4 @@ trained/*
 !trained/.gitkeep 
 .DS_Store
 *.pkl
+._.DS_Store

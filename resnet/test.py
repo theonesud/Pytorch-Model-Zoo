@@ -21,6 +21,8 @@ resnet = torch.load('../trained/resnet.pkl')
 correct = 0
 total = 0
 for images, labels in test_loader:
+    images = images.cuda()
+    labels = labels.cuda()
     images = Variable(images)
     outputs = resnet(images)
     _, predicted = torch.max(outputs.data, 1)
