@@ -16,7 +16,7 @@ Trained models can be found [here](https://drive.google.com/open?id=0B24n6xHwJ0h
 ## Models
 
 ### 1. CNNs
-* Image Classification: [Inception-ResNet 2016](https://arxiv.org/pdf/1602.07261.pdf)
+* Image Classification: [Microsoft-ResNet 2015](https://arxiv.org/pdf/1512.03385.pdf)
 * Spatial Transformation Network [STN 2016](https://arxiv.org/pdf/1506.02025.pdf)
 * You Only Look Once [YOLO 2016](https://arxiv.org/pdf/1506.02640.pdf)
 * Super resolution [IEEE 2015](https://arxiv.org/pdf/1501.00092v3.pdf)
