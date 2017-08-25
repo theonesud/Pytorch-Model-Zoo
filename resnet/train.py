@@ -5,6 +5,11 @@ import torchvision.transforms as transforms
 from torch.autograd import Variable
 from model import ResidualBlock, ResNet
 
+# Hyperparameters
+lr = 0.001
+epochs = 80
+batch_size = 100
+
 # Image Preprocessing
 transform = transforms.Compose([
     transforms.Scale(40),
@@ -20,7 +25,7 @@ train_dataset = dsets.CIFAR10(root='../datasets/',
 
 # Data Loader (Input Pipeline)
 train_loader = torch.utils.data.DataLoader(dataset=train_dataset,
-                                           batch_size=100,
+                                           batch_size=batch_size,
                                            shuffle=True)
 
 # Model
@@ -29,11 +34,9 @@ resnet = resnet.cuda()
 
 # Loss and Optimizer
 criterion = nn.CrossEntropyLoss()
-lr = 0.001
 optimizer = torch.optim.Adam(resnet.parameters(), lr=lr)
 
 # Training
-epochs = 80
 for epoch in range(epochs):
     for i, (images, labels) in enumerate(train_loader):
         images = images.cuda()
@@ -48,9 +51,9 @@ for epoch in range(epochs):
         loss.backward()
         optimizer.step()
 
-        if (i + 1) % 100 == 0:
+        if (i + 1) % batch_size == 0:
             print ("Epoch [%d/%d], Iter [%d/%d] Loss: %.4f" %
-                   (epoch + 1, epochs, i + 1, 500, loss.data[0]))
+                   (epoch + 1, epochs, i + 1, len(train_loader), loss.data[0]))
 
     # Decaying Learning Rate
     if (epoch + 1) % 20 == 0:

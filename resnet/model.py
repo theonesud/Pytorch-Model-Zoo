@@ -1,13 +1,11 @@
 import torch.nn as nn
 
 
-# 3x3 Convolution
 def conv3x3(in_channels, out_channels, stride=1):
     return nn.Conv2d(in_channels, out_channels, kernel_size=3,
                      stride=stride, padding=1, bias=False)
 
 
-# Residual Block
 class ResidualBlock(nn.Module):
     def __init__(self, in_channels, out_channels, stride=1, downsample=None):
         super(ResidualBlock, self).__init__()
@@ -32,7 +30,6 @@ class ResidualBlock(nn.Module):
         return out
 
 
-# ResNet Module
 class ResNet(nn.Module):
     def __init__(self, block, layers, num_classes=10):
         super(ResNet, self).__init__()
