@@ -1,6 +1,6 @@
 # Deep learning models in PyTorch [IN PROGRESS]
 
-This repository contains deep learning models built in [PyTorch](http://pytorch.org/). Intended for learning PyTorch this repo is made very simple to understand for a person with basic python and deep learning knowledge. All kinds of important deep learning models are implemented here. Links to the papers are also given.
+This repository contains deep learning models built in [PyTorch](http://pytorch.org/). Intended for learning PyTorch, this repo is made understandable for someone with basic python and deep learning knowledge. All kinds of important deep learning models are implemented here. Links to the papers are also given.
 
 The structure for each project is consistent:
 * model.py - Contains the model of the neural network.
@@ -9,14 +9,14 @@ The structure for each project is consistent:
 * any other supporting files.
 
 Common folders:
-Trained folder - Trained models can will be saved here.
-Datasets folder - Datasets downloaded will be stored here.
+* Trained folder - Trained models can will be saved here.
+* Datasets folder - Datasets downloaded will be stored here.
 
 Best practices like PEP8, dropout, batch normalization, suitable optimizers are used.
 
 My trained models can be found [here](https://drive.google.com/open?id=0B24n6xHwJ0h0TW5mdWk2QTZIN0k).
 
-### IMP: For training on the CPU remove '.cuda()' wherever you find it.
+#### IMP: For training on the CPU remove '.cuda()' wherever you find it.
 
 ## Models
 
@@ -52,9 +52,9 @@ My trained models can be found [here](https://drive.google.com/open?id=0B24n6xHw
 * Network in Network [2014](https://arxiv.org/pdf/1312.4400.pdf)
 
 References:
-[https://github.com/songrotek/Deep-Learning-Papers-Reading-Roadmap](https://github.com/songrotek/Deep-Learning-Papers-Reading-Roadmap)
-[https://github.com/terryum/awesome-deep-learning-papers](https://github.com/terryum/awesome-deep-learning-papers)
-[https://github.com/yunjey/pytorch-tutorial](https://github.com/yunjey/pytorch-tutorial)
-[https://github.com/pytorch/examples](https://github.com/pytorch/examples)
-[https://github.com/bharathgs/Awesome-pytorch-list](https://github.com/bharathgs/Awesome-pytorch-list)
-[https://github.com/ritchieng/the-incredible-pytorch](https://github.com/ritchieng/the-incredible-pytorch)
+* [https://github.com/songrotek/Deep-Learning-Papers-Reading-Roadmap](https://github.com/songrotek/Deep-Learning-Papers-Reading-Roadmap)
+* [https://github.com/terryum/awesome-deep-learning-papers](https://github.com/terryum/awesome-deep-learning-papers)
+* [https://github.com/yunjey/pytorch-tutorial](https://github.com/yunjey/pytorch-tutorial)
+* [https://github.com/pytorch/examples](https://github.com/pytorch/examples)
+* [https://github.com/bharathgs/Awesome-pytorch-list](https://github.com/bharathgs/Awesome-pytorch-list)
+* [https://github.com/ritchieng/the-incredible-pytorch](https://github.com/ritchieng/the-incredible-pytorch)
