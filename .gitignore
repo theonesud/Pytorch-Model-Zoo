@@ -107,3 +107,5 @@ trained/*
 .DS_Store
 *.pkl
 ._*
+artistic\ style\ transfer/output/*
+!artistic\ style\ transfer/output/.gitkeep
