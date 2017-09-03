@@ -1,0 +1,3 @@
+[submodule "img captioning/pycoco"]
+	path = img captioning/pycoco
+	url = https://github.com/pdollar/coco
