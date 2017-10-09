@@ -109,3 +109,4 @@ trained/*
 ._*
 artistic\ style\ transfer/output/*
 !artistic\ style\ transfer/output/.gitkeep
+*.ipynb
