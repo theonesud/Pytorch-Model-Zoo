@@ -1,4 +1,6 @@
-# Deep learning models in PyTorch [IN PROGRESS]
+# Deep learning models in PyTorch
+
+### NOTE: This project is not actively maintained anymore. Feel free to send a PR or fork it.
 
 This repository contains deep learning models built in [PyTorch](http://pytorch.org/). Intended for learning PyTorch, this repo is made understandable for someone with basic python and deep learning knowledge. All kinds of important deep learning models are implemented here. Links to the papers are also given.
 
@@ -13,8 +15,6 @@ Common folders:
 * Datasets folder - Datasets downloaded will be stored here.
 
 Best practices like PEP8, dropout, batch normalization, suitable optimizers are used.
-
-My trained models can be found [here](https://drive.google.com/open?id=0B24n6xHwJ0h0TW5mdWk2QTZIN0k).
 
 #### IMP: For training on the CPU remove '.cuda()' wherever you find it.
 
