@@ -15,12 +15,11 @@ def pick_top_n(preds, vocab_size):
     p = np.squeeze(preds)
     p[np.argsort(p)[:-5]] = 0
     p = p / np.sum(p)
-    c = np.random.choice(vocab_size, 1, p=p)[0]
-    return c
+    return np.random.choice(vocab_size, 1, p=p)[0]
 
 
 def sample(checkpoint):
-    samples = [c for c in prime]
+    samples = list(prime)
     int_to_vocab, vocab_to_int, no_classes = pickle.load(
         open("./saves/data.p", "rb"))
 
@@ -45,7 +44,7 @@ def sample(checkpoint):
         samples.append(int_to_vocab[c])
 
         # Generate new samples
-        for i in range(n_samples):
+        for _ in range(n_samples):
             x[0, 0] = c
             feed = {model.inputs: x, model.initial_state: new_state}
             preds, new_state = sess.run(

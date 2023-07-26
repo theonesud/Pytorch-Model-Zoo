@@ -70,13 +70,16 @@ def train():
                 batch_loss, new_state, _ = sess.run(
                     [model.loss, model.final_state, model.train_op], feed_dict=feed)
                 end = time.time()
-                print('Epoch: {} '.format(e + 1), 'Loss: {:.4f} '.format(batch_loss),
-                      '{:.4f} sec/batch'.format((end - start)))
+                print(
+                    f'Epoch: {e + 1} ',
+                    'Loss: {:.4f} '.format(batch_loss),
+                    '{:.4f} sec/batch'.format((end - start)),
+                )
 
                 if (counter % save_every_n == 0):
-                    saver.save(sess, "saves/{}.ckpt".format(counter))
+                    saver.save(sess, f"saves/{counter}.ckpt")
 
-        saver.save(sess, "saves/{}.ckpt".format(counter))
+        saver.save(sess, f"saves/{counter}.ckpt")
 
 
 if __name__ == '__main__':
